@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+}
+.cs-stick .nav-link {
+  color: white !important;
+}
+@media (min-width: 768px) {
+  .cs-stick .navbar {
+    background-color: transparent !important;
+ }
+}
+header.cs-no-stick .nav-link {
+  color: black !important;
+}
+header {
+  &.cs-no-stick {
+    background-color: white;
+  }
+  &.cs-stick {
+    background-color: transparent !important;
+  }
+}
+.cs-no-stick .navbar-toggler i  {
+  color: black !important;
+}
+.cs-stick .navbar {
+   background-color: #0f0f57 ;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: 1140px !important;
+  }
+}
+.container {
+  width: 100%;
+}
+header {
+  transition: background-color 0.5s ease;
+}
+.nav-item .nav-link {
+  font-size: 1.1em
+}
+.banner {
+  background: url(../images/hero-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.banner-content {
+  padding: 180px 0;
+}
+.icon-service {
+  width: 75px;
+}
+.scale:hover {
+  scale: 1.05;
+  transition: .5s;
+}
+.scale {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.desc-choose {
+  color: #b8651d !important;
+}
+.icon-choose {
+  width: 55px;
+  
+}
+.icon-choose:hover {
+  scale: 1.15;
+  transition: .5s;
+  
+}
+.icon-center img {
+  width: 284px;
+}
+.icon-center img:hover {
+  scale: 1.18;
+  transition: .5s;
+}
+.product-img:hover {
+  transform: scale(1.1);
+  border-radius: 0.5rem;
+  
+}
+.product-img {
+  transition: 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.portfolio .col-4 {
+  padding: 0.75rem
+}
+.dollar {
+  top: -22px;
+  position: relative;
+  font-size: .7em;
+}
+.price {
+  font-size: 3.8em;
+}
+.swiper {
+  width: 100%;
+  height: fit-content
+}
+.testimonial-name {
+  font-size: 1.2em;
+}
+.quote-right {
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+  bottom: 0px;
+}
+.bi-quote::before {
+  font-size: 25px;
+}
+.sub-banner {
+  background: url(../images/hero-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.sub-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+.sub-banner .container {
+  padding: 130px 0;
+}
+.Company {
+  padding: 80px 0;
+}
+.Company img {
+  filter: grayscale(1);
+}
+
+.portfolio .active {
+  background: #000 !important;
+}
+
+.icon-social {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e8e8e8;
+  color: #025add;
+}
+.icon-social:hover {
+   border: 2px solid #025add;
+
+}
+.team-member p{
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.team-member .product-img {
+  width: 85%;
+}
+.accordion-item .accordion-button::after {
+  color: #025add;
+}
+.accordion-button, .accordion-body {
+  background: #f8f8f8 !important;
+  border: 1px 1px 0 1px !important;
+}
+
+.in-view {
+  transform: none !important;
+  opacity: 1 !important;
+}
+.fadeup {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.zoom-out {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+.delay {
+  transition-delay: 0.05s;
+}
+.date {
+  font-size: 0.9em;
+  color: #3a3a3a;
+}
+.form-input {
+  border: unset;
+  border-radius: 8px;
+  background: #f8f8f8;
+  padding: 15px
+}
+.text-fotter {
+  font-size: 0.9em;
+}
+footer .sub-banner::before {
+  opacity: 0.8;
+}
+.send {
+  width: 48px;
+  height: 48px;
+  right: 8px;
+}
+.bg-btn {
+  background: linear-gradient(45deg, #025add, #0c6de0);
+}
+.bg-btn:hover {
+  background: linear-gradient(45deg, #0c6de0, #025add);
+}
+.color-text{
+  color: #025add;
+}
+.nav-link {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+      width: auto !important;
+  }
+}
+.navbar-brand {
+  width: 75%;
+}
+.nav-link:hover {
+  color: #025add !important; 
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  display: unset;
+}
+.dropdown-content a:hover {
+  color: #025add
+}
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transform: translateY(100px);
+  transition: 0.5s;
+  
+
+}
+@keyframes uptocallmini {
+  0% {
+      -webkit-box-shadow: 0 0 4px 3px #025add53, 0 0 0px 0px transparent, 0 0 0px 0px #025add53;
+      box-shadow: 0 0 4px 3px #025add53, 0 0 0px 0px transparent, 0 0 0px 0px #025add53;
+    }
+    10% {
+      -webkit-box-shadow: 0 0 4px 3px #0c6de04f, 0 0 12px 10px transparent, 0 0 12px 14px #0c6de04f;
+      box-shadow: 0 0 4px 3px #0c6de04f, 0 0 12px 10px transparent, 0 0 12px 14px #0c6de04f;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 4px 3px #025add53, 0 0 0px 10px transparent, 0 0 0px 20px #025add53;
+      box-shadow: 0 0 4px 3px #025add53, 0 0 0px 15px transparent, 0 0 0px 15px #025add53;
+    }
+}
+.animation-ping {
+  animation: uptocallmini 1.75s 0s ease-out infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 100%;
+}
+.moon {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+}
+
+p, h4 {
+  color: black;
+}
+.dark {
+  background: black;
+  color: white;
+}
+.boxshadow {
+  box-shadow: -1px 5px 20px 0px rgb(12 109 224 / 69%);
+}
+.shado {
+  box-shadow: -1px 5px 20px 0px rgb(12 109 224 / 69%);
+}
